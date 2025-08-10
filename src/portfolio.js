@@ -20,26 +20,24 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "CodeWithEze",
+  title: "Hi all, I'm Eze",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Backend Developer 🚀 with a solid background in Python, Node.js, Rust, and database systems like MySQL and MongoDB. I build fast, scalable, and secure server-side applications, and I’m constantly exploring new tools that push performance and maintainability."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1L6ZjuqfB16R90kdjpDAb-ntNQZt5pkpb/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Pascal509",
+  linkedin: "https://www.linkedin.com/in/ezenagu-chinemerem/",
+  gmail: "chinemeremezenagu@gmail.com",
+  medium: "https://medium.com/@CodeWithEzeh",
+  stackoverflow: "https://stackoverflow.com/users/23903260/ezenagu-chinemerem",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +47,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY BACKEND DEVELOPER WHO WANTS TO EXPLORE APIs DESIGN, DATABASE OPTIMIZATION, SYSTEM Auth, DevOps etc",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Create scalable, well-structured APIs for seamless frontend-backend communication"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Use JWT, OAuth2, and RBAC to protect sensitive endpoints and manage user access"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Work with MySQL, PostgreSQL, and MongoDB to ensure fast, reliable data storage and retrieva"
     )
   ],
 
@@ -126,23 +124,36 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "ALX Academy",
+      logo: require("./assets/images/alx3.png"),
+      subHeader: "Diploma in Software Engineering",
+      duration: "August 2023 -  October 2024",
+      desc: "Developed a strong foundation in software engineering principles, focusing on backend development, system design, and database management.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Gained hands-on experience in building scalable applications using Python and Node.js",
+        "Learned best practices in API design, security, and performance optimization",
+        "Engaged in collaborative projects, enhancing teamwork and problem-solving skills"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
+      schoolName: "Alt School Africa",
+      logo: require("./assets/images/Altschool.png"),
+      subHeader: "Associate's degree in software development",
+      duration: "January 2022 - December 2022",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Developed a deep understanding of backend system design and API development",
+        "Gained expertise in Python, Node.js, and database management",
+        "Worked on real-world projects, enhancing practical skills in software development"]
+    },
+    {
+      schoolName: "Google Developers Group (GDG)",
+      logo: require("./assets/images/GDG-Google1.png"),
+      subHeader: "Contributor / Participant",
+      duration: "May 2025 - Present",
+      desc: "Contributed to various open-source projects, focusing on backend development and API integration.",
+      descBullets: ["Participated in hackathons and coding challenges, enhancing problem-solving skills",
+        "Collaborated with a community of developers to build innovative solutions",
+        "Contributed to open-source projects, gaining practical experience in software development"]
     }
   ]
 };
@@ -154,14 +165,14 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "50%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
+      Stack: "Nodejs, React, Python, MySQL, Rust",
       progressPercentage: "60%"
     }
   ],
@@ -174,29 +185,39 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Lead Backend Engineer",
+      project: "AudioAlly",
+      companylogo: require("./assets/images/Audioally.jpg"),
+      date: "June 2024 – Present",
+      desc: "Engineered an intelligent backend system to enhance user experience and audio personalization for daily activities.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Collaborated to build a scalable and efficient AI-Powered Playlist Recommendation Platform",
+        "Implemented a caching mechanism for API responses, reducing average load time"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Backend Developer",
+      project: "Bookstore-Catalog-App",
+      companylogo: require("./assets/images/BookStore-App.png"),
+      date: "February 2025 – May 2025",
+      desc: "Developed a robust backend system for a bookstore catalog application, focusing on API development and database management.",
+      descBullets: [
+        "Designed and implemented RESTful APIs for book management, user authentication, and search functionality",
+        "Optimized database queries to improve performance and reduce response times",
+        "Ensured data integrity and security through proper validation and authentication mechanisms"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Backend Software Engineer",
+      project: "OpenAI API assistant",
+      projectlogo: require("./assets/images/OpenAIAssistantsAPI.png"),
+      date: "June 2025 –  June 2025",
+      desc: "Developed a backend system for the OpenAI API assistant, focusing on natural language processing and machine learning integration.",
+      descBullets: [
+        "Implemented a backend system to handle user queries and provide intelligent responses using OpenAI's API",
+        "Integrated machine learning models to enhance the assistant's understanding of user intent",
+        "Ensured scalability and reliability of the backend system to handle high traffic and concurrent requests"
+      ]
     }
   ]
 };
@@ -213,11 +234,11 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "PERSONAL AND OPEN SOURCE PROJECTS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
+      image: require("./assets/images/FinTech.png"),
+      projectName: "Fintech",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -229,12 +250,12 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "AudioAlly",
+      projectDesc: "AI-Powered Music Personalization Platform",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "audio-ally.vercel.app"
         }
       ]
     }
@@ -252,15 +273,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "AltSchool Africa",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Full-year immersive program on backend system design and API development",
+      image: require("./assets/images/Altschool.png"),
+      imageAlt: "Alt-school",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.altschoolafrica.com/"
         },
         {
           name: "Award Letter",
@@ -273,15 +294,15 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "ALX Africa",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Mastered low-level programming, memory management, and Linux systems",
+      image: require("./assets/images/alx3.png"),
+      imageAlt: "ALX Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "ALX Africa",
+          url: "https://www.alxafrica.com/"
         }
       ]
     },
@@ -337,8 +358,8 @@ const talkSection = {
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title: "Build With AI",
+      subtitle: "A Google Developer Group Event, Mpape, Abuja",
       slides_url: "https://bit.ly/saadpasta-slides",
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
@@ -372,8 +393,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+2349028854415",
+  email_address: "chinemeremezenagu@gmail.com"
 };
 
 // Twitter Section
@@ -383,7 +404,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

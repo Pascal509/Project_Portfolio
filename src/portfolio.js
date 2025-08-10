@@ -185,8 +185,8 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Lead Backend Engineer",
-      project: "AudioAlly",
+      role: "AudioAlly",
+      project: "Lead Backend Engineer",
       companylogo: require("./assets/images/Audioally.jpg"),
       date: "June 2024 – Present",
       desc: "Engineered an intelligent backend system to enhance user experience and audio personalization for daily activities.",
@@ -196,8 +196,8 @@ const workExperiences = {
       ]
     },
     {
-      role: "Backend Developer",
-      project: "Bookstore-Catalog-App",
+      role: "Bookstore-Catalog-App",
+      project: "Backend Developer",
       companylogo: require("./assets/images/BookStore-App.png"),
       date: "February 2025 – May 2025",
       desc: "Developed a robust backend system for a bookstore catalog application, focusing on API development and database management.",
@@ -208,8 +208,8 @@ const workExperiences = {
       ]
     },
     {
-      role: "Backend Software Engineer",
-      project: "OpenAI API assistant",
+      role: "OpenAI API assistant",
+      project: "Backend Software Engineer",
       projectlogo: require("./assets/images/OpenAIAssistantsAPI.png"),
       date: "June 2025 –  June 2025",
       desc: "Developed a backend system for the OpenAI API assistant, focusing on natural language processing and machine learning integration.",
@@ -237,25 +237,25 @@ const bigProjects = {
   subtitle: "PERSONAL AND OPEN SOURCE PROJECTS",
   projects: [
     {
-      image: require("./assets/images/FinTech.png"),
-      projectName: "Fintech",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/job-board.jpg"),
+      projectName: "Job-Board API",
+      projectDesc: "A RESTful API for Job Board Application",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: ""
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "AudioAlly",
-      projectDesc: "AI-Powered Music Personalization Platform",
+      image: require("./assets/images/AI-recruiter.jpg"),
+      projectName: "AI-Freddie recruiter",
+      projectDesc: "An AI-Powered Recruitment Assistant",
       footerLink: [
         {
           name: "Visit Website",
-          url: "audio-ally.vercel.app"
+          url: "https://drive.google.com/file/d/196xOSvZF1LDOmQQoT4c_AMrlKqm8wuvN/view?usp=sharing"
         }
       ]
     }
@@ -283,14 +283,14 @@ const achievementSection = {
           name: "Certification",
           url: "https://www.altschoolafrica.com/"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: ""
+        // }
       ]
     },
     {
@@ -307,19 +307,19 @@ const achievementSection = {
       ]
     },
 
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
+    // {
+    //   title: "PWA Web App Developer",
+    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+    //   image: require("./assets/images/pwaLogo.webp"),
+    //   imageAlt: "PWA Logo",
+    //   footerLink: [
+    //     {name: "Certification", url: ""},
+    //     {
+    //       name: "Final Project",
+    //       url: "https://pakistan-olx-1.firebaseapp.com/"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -353,15 +353,15 @@ const blogSection = {
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE"
   ),
 
   talks: [
     {
       title: "Build With AI",
       subtitle: "A Google Developer Group Event, Mpape, Abuja",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      slides_url: "https://docs.google.com/presentation/d/e/2PACX-1vRZvO_pplU0iXPwCKcSsy6mLyHY1sk7PeuSfW7V3g3Xs4FimfvrzBZj_MRsikocaVvV_9WFf7LYv1F4/pub?start=false&loop=false&delayms=3000&slide=id.g3246bfcce04_0_0",
+      event_url: "https://gdg.community.dev/"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -377,7 +377,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section

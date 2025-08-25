@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Backend Developer 🚀 with a solid background in Python, Node.js, Rust, and database systems like MySQL and MongoDB. I build fast, scalable, and secure server-side applications, and I’m constantly exploring new tools that push performance and maintainability."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1L6ZjuqfB16R90kdjpDAb-ntNQZt5pkpb/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1yqQXjeTBm4u5IjRP46hfdVvHeqGgqgNS/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -254,7 +254,7 @@ const bigProjects = {
       projectDesc: "An AI-Powered Recruitment Assistant",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "See Video",
           url: "https://drive.google.com/file/d/196xOSvZF1LDOmQQoT4c_AMrlKqm8wuvN/view?usp=sharing"
         }
       ]
@@ -300,6 +300,7 @@ const achievementSection = {
       image: require("./assets/images/alx3.png"),
       imageAlt: "ALX Logo",
       footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/1V6it3nOu9TaPgtz4rLy2gcmqvkX9Zqtq/view?usp=sharing"},
         {
           name: "ALX Africa",
           url: "https://www.alxafrica.com/"
@@ -345,7 +346,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections

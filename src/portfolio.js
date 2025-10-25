@@ -301,7 +301,7 @@ const achievementSection = {
     {
       title: "Alx_Africa",
       subtitle:
-        "Full-year immersive program on backend system design and API development",
+        "Full-year immersive program on backend system design, API development, and AI integration",
       image: require("./assets/images/alx3.png"),
       imageAlt: "Alx Africa Logo",
       footerLink: [
@@ -339,7 +339,6 @@ const achievementSection = {
       image: require("./assets/images/GDG-Google.png"),
       imageAlt: "GDG Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
           name: "Membership Card",
           url: "https://drive.google.com/file/d/18YN-vl1KQdgcWBkUiBx0kjsWIGTC9ZH7/view?usp=sharing"

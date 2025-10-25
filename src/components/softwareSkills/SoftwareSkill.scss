@@ -29,3 +29,17 @@
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+
+/* Styles for local SVG icons */
+.software-skill-inline > img.software-skill-svg {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.25rem 0 0;
+}
+.software-skill-inline > img.software-skill-svg:hover,
+.software-skill-inline > i:hover {
+  filter: brightness(0.9) saturate(1.2);
+}

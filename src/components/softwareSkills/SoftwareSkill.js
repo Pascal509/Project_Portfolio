@@ -1,6 +1,6 @@
 import React from "react";
 import "./SoftwareSkill.scss";
-import {skillsSection} from "../../portfolio";
+import { skillsSection } from "../../portfolio";
 
 export default function SoftwareSkill() {
   return (
@@ -14,7 +14,15 @@ export default function SoftwareSkill() {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <i className={skills.fontAwesomeClassname}></i>
+                {skills.svg ? (
+                  <img
+                    src={skills.svg.default ? skills.svg.default : skills.svg}
+                    alt={skills.skillName}
+                    className="software-skill-svg"
+                  />
+                ) : (
+                  <i className={skills.fontAwesomeClassname}></i>
+                )}
                 <p>{skills.skillName}</p>
               </li>
             );

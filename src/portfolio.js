@@ -23,10 +23,14 @@ const greeting = {
   username: "CodeWithEze",
   title: "Hi all, I'm Eze",
   subTitle: emoji(
-    "A passionate Backend Developer 🚀 with a solid background in Python, Node.js, Rust, and database systems like MySQL and MongoDB. I build fast, scalable, and secure server-side applications, and I’m constantly exploring new tools that push performance and maintainability."
+    `Hey, I'm Chinemerem Ezenagu, a Backend Engineer passionate about building secure, scalable, and AI-powered backend systems.
+With experience across fintech, e-commerce, and AI platforms, I’ve architected APIs and data systems handling millions of operations while ensuring speed, reliability, and clean design.
+Skilled in Go, Rust, Node.js, and Python, I focus on API architecture, database optimization, and AI integration to create intelligent, high-performance backend solutions.
+Beyond coding, I’m a technical writer and mentor, committed to simplifying complex concepts and helping teams build with clarity and precision.
+Currently, I’m focused on AI-driven automation, system scalability, and mentorship within the developer community.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1yqQXjeTBm4u5IjRP46hfdVvHeqGgqgNS/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1qZqX8IYFOcpsB68k7k2BG5RckbWPHRmX/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -63,16 +67,18 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "rust",
+      fontAwesomeClassname: "fas fa-cubes",
+      svg: require("./assets/fonts/rust-svgrepo-com.svg")
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "go",
+      fontAwesomeClassname: "fab fa-golang",
+      svg: require("./assets/fonts/Go-Logo_Aqua.svg")
     },
     {
       skillName: "JavaScript",
@@ -87,12 +93,9 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "mongodb",
+      fontAwesomeClassname: "fab fa-mongodb",
+      svg: require("./assets/fonts/MongoDB_Logo.svg")
     },
     {
       skillName: "sql-database",
@@ -103,16 +106,24 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
+      skillName: "authentication",
+      fontAwesomeClassname: "fas fa-user-shield"
+    },
+    {
+      skillName: "encryption",
+      fontAwesomeClassname: "fas fa-user-lock"
+    },
+    {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "github",
+      fontAwesomeClassname: "fab fa-github"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -146,14 +157,14 @@ const educationInfo = {
         "Worked on real-world projects, enhancing practical skills in software development"]
     },
     {
-      schoolName: "Google Developers Group (GDG)",
-      logo: require("./assets/images/GDG-Google1.png"),
-      subHeader: "Contributor / Participant",
+      schoolName: "Boot.dev",
+      logo: require("./assets/images/bootdev-logo-full-small.webp"),
+      subHeader: "Certificate Of Achievement",
       duration: "May 2025 - Present",
-      desc: "Contributed to various open-source projects, focusing on backend development and API integration.",
-      descBullets: ["Participated in hackathons and coding challenges, enhancing problem-solving skills",
-        "Collaborated with a community of developers to build innovative solutions",
-        "Contributed to open-source projects, gaining practical experience in software development"]
+      desc: "Ongoing Course Certification from Boot.dev for Backend Development",
+      descBullets: ["Gaining hands-on experience building scalable backend systems using Go, Python, and SQL.",
+        "Designing and deploying RESTful APIs with strong focus on data modeling, authentication, and performance optimization.",
+        "Applying real-world backend principles through projects emphasizing microservices, containerization, and clean architecture."]
     }
   ]
 };
@@ -164,16 +175,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "50%" //Insert relative proficiency in percentage
-    },
-    {
       Stack: "Backend",
       progressPercentage: "90%"
     },
     {
-      Stack: "Nodejs, React, Python, MySQL, Rust",
-      progressPercentage: "60%"
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "50%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "JavaScript, Go, Rust, mySQL, Python, Typescript, LangChain, Data structures and Algorithms ",
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -185,40 +196,32 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "AudioAlly",
+      role: "ScaleWorkFlow",
       project: "Lead Backend Engineer",
-      companylogo: require("./assets/images/Audioally.jpg"),
-      date: "June 2024 – Present",
-      desc: "Engineered an intelligent backend system to enhance user experience and audio personalization for daily activities.",
+      companylogo: require("./assets/images/scaleworkflow_logo.png"),
+      companyUrl: "http://www.scaleworkflow.com/",
+      date: "August 2025 – Present",
+      desc: `ScaleWorkflow is a workflow automation and business optimization platform designed to help enterprises streamline 
+            operations through intelligent process management. The platform provides custom software solutions, automation tools, 
+            and system integrations that enhance team collaboration, efficiency, and productivity.`,
       descBullets: [
-        "Collaborated to build a scalable and efficient AI-Powered Playlist Recommendation Platform",
-        "Implemented a caching mechanism for API responses, reducing average load time"
-      ]
+        "Contributed as a Lead Backend Engineer, where I architected and deployed a secure Node.js + Express REST API with MongoDB, improved performance by 30%",
+        "Implemented JWT-based authentication, robust file upload services, and automated testing pipelines."
+      ],
     },
     {
-      role: "Bookstore-Catalog-App",
+      role: "AudioAlly",
       project: "Backend Developer",
-      companylogo: require("./assets/images/BookStore-App.png"),
-      date: "February 2025 – May 2025",
-      desc: "Developed a robust backend system for a bookstore catalog application, focusing on API development and database management.",
+      companylogo: require("./assets/images/Audioally.jpg"),
+      companyUrl: "https://audio-ally.vercel.app/",
+      date: "April 2024 – July 2024",
+      desc: "Engineered a robust backend system for an audio content platform, focusing on API development and database management.",
       descBullets: [
-        "Designed and implemented RESTful APIs for book management, user authentication, and search functionality",
+        "Designed and implemented RESTful APIs for audio content management, user authentication, and search functionality",
         "Optimized database queries to improve performance and reduce response times",
         "Ensured data integrity and security through proper validation and authentication mechanisms"
       ]
     },
-    {
-      role: "OpenAI API assistant",
-      project: "Backend Software Engineer",
-      projectlogo: require("./assets/images/OpenAIAssistantsAPI.png"),
-      date: "June 2025 –  June 2025",
-      desc: "Developed a backend system for the OpenAI API assistant, focusing on natural language processing and machine learning integration.",
-      descBullets: [
-        "Implemented a backend system to handle user queries and provide intelligent responses using OpenAI's API",
-        "Integrated machine learning models to enhance the assistant's understanding of user intent",
-        "Ensured scalability and reliability of the backend system to handle high traffic and concurrent requests"
-      ]
-    }
   ]
 };
 
@@ -237,13 +240,25 @@ const bigProjects = {
   subtitle: "PERSONAL AND OPEN SOURCE PROJECTS",
   projects: [
     {
-      image: require("./assets/images/job-board.jpg"),
-      projectName: "Job-Board API",
-      projectDesc: "A RESTful API for Job Board Application",
+      image: require("./assets/images/multi-agent-assistant.png"),
+      projectName: "Multi-Agent Assistant",
+      projectDesc: "A Groceries Shopping Multi-Agent Assistant Application",
       footerLink: [
         {
           name: "Visit Website",
-          url: ""
+          url: "https://multi-agent-groceries-shopping-assistant.streamlit.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/Audioally.jpg"),
+      projectName: "AudioAlly",
+      projectDesc: "An AI-Powered Audio Content Management Platform",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://audio-ally.vercel.app/"
         }
         //  you can add extra buttons here.
       ]
@@ -256,6 +271,17 @@ const bigProjects = {
         {
           name: "See Video",
           url: "https://drive.google.com/file/d/196xOSvZF1LDOmQQoT4c_AMrlKqm8wuvN/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Asteroids-game.png"),
+      projectName: "Asteroid Game",
+      projectDesc: "A 2D Space Shooter Game Built with Python and Pygame",
+      footerLink: [
+        {
+          name: "See Video",
+          url: "https://drive.google.com/file/d/1WRW2vwcSymzldYbhZ4e5q5_bHCnZ0fK6/view?usp=sharing"
         }
       ]
     }
@@ -273,15 +299,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "AltSchool Africa",
+      title: "Alx_Africa",
       subtitle:
         "Full-year immersive program on backend system design and API development",
-      image: require("./assets/images/Altschool.png"),
-      imageAlt: "Alt-school",
+      image: require("./assets/images/alx3.png"),
+      imageAlt: "Alx Africa Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://www.altschoolafrica.com/"
+          name: "Certificate Of Achievement",
+          url: "https://drive.google.com/file/d/11oaioFJeaxl3aPM3XFxevDOS4pyMADm7/view?usp=sharing"
         },
         // {
         //   name: "Award Letter",
@@ -294,33 +320,32 @@ const achievementSection = {
       ]
     },
     {
-      title: "ALX Africa",
+      title: "Alt_School Africa",
       subtitle:
-        "Mastered low-level programming, memory management, and Linux systems",
-      image: require("./assets/images/alx3.png"),
-      imageAlt: "ALX Logo",
+        "Mastered linux systems and software development in a rigorous program",
+      image: require("./assets/images/Altschool.png"),
+      imageAlt: "Alt School Africa Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1V6it3nOu9TaPgtz4rLy2gcmqvkX9Zqtq/view?usp=sharing"},
+        // {name: "Certification", url: "https://drive.google.com/file/d/1V6it3nOu9TaPgtz4rLy2gcmqvkX9Zqtq/view?usp=sharing"},
         {
-          name: "ALX Africa",
-          url: "https://www.alxafrica.com/"
+          name: "Alt_School Africa",
+          url: "https://www.altschoolafrica.com/"
         }
       ]
     },
-
-    // {
-    //   title: "PWA Web App Developer",
-    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-    //   image: require("./assets/images/pwaLogo.webp"),
-    //   imageAlt: "PWA Logo",
-    //   footerLink: [
-    //     {name: "Certification", url: ""},
-    //     {
-    //       name: "Final Project",
-    //       url: "https://pakistan-olx-1.firebaseapp.com/"
-    //     }
-    //   ]
-    // }
+    {
+      title: "Google Developers Group (GDG)",
+      subtitle: "Contributed to various open-source projects, focusing on backend development and API integration.",
+      image: require("./assets/images/GDG-Google.png"),
+      imageAlt: "GDG Logo",
+      footerLink: [
+        {name: "Certification", url: ""},
+        {
+          name: "Membership Card",
+          url: "https://drive.google.com/file/d/18YN-vl1KQdgcWBkUiBx0kjsWIGTC9ZH7/view?usp=sharing"
+        }
+      ]
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };

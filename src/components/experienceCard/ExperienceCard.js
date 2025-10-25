@@ -35,17 +35,43 @@ export default function ExperienceCard({cardInfo, isDark}) {
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+          <h5 className="experience-text-company">
+            {cardInfo.companyUrl ? (
+              <a
+                href={cardInfo.companyUrl}
+                target="_blank"
+                rel="noreferrer"
+                className={isDark ? "dark-mode-text" : ""}
+              >
+                {cardInfo.company}
+              </a>
+            ) : (
+              cardInfo.company
+            )}
+          </h5>
         </div>
 
-        <img
-          crossOrigin={"anonymous"}
-          ref={imgRef}
-          className="experience-roundedimg"
-          src={cardInfo.companylogo}
-          alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
-        />
+        {cardInfo.companyUrl ? (
+          <a href={cardInfo.companyUrl} target="_blank" rel="noreferrer">
+            <img
+              crossOrigin={"anonymous"}
+              ref={imgRef}
+              className="experience-roundedimg"
+              src={cardInfo.companylogo}
+              alt={cardInfo.company}
+              onLoad={() => getColorArrays()}
+            />
+          </a>
+        ) : (
+          <img
+            crossOrigin={"anonymous"}
+            ref={imgRef}
+            className="experience-roundedimg"
+            src={cardInfo.companylogo}
+            alt={cardInfo.company}
+            onLoad={() => getColorArrays()}
+          />
+        )}
       </div>
       <div className="experience-text-details">
         <h5

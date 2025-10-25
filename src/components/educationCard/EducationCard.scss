@@ -41,12 +41,23 @@
 }
 
 .education-roundedimg {
+  /* Default: preserve previous circular avatar behavior for most logos
+     (object-fit: cover so logos that are already cropped or sized work as before) */
   object-fit: cover;
+  display: block;
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+}
+
+/* Target Boot.dev specifically (alt text matches `school.schoolName` in data)
+   Apply contain + padding so the full Boot.dev logo is visible inside the circle */
+.education-roundedimg[alt="Boot.dev"] {
+  object-fit: contain;
+  padding: 0.6rem; /* whitespace so rounded mask doesn't crop the logo */
+  background-color: $lightBackground1;
 }
 
 .education-card-right {
@@ -108,6 +119,11 @@
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
+
+  /* responsive adjustment for Boot.dev avatar */
+  .education-roundedimg[alt="Boot.dev"] {
+    padding: 0.45rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -126,6 +142,10 @@
     height: 4rem;
     margin-bottom: 1rem;
     margin-right: 0;
+  }
+
+  .education-roundedimg[alt="Boot.dev"] {
+    padding: 0.45rem;
   }
   .education-text-bullets > ul {
     max-width: 80%;

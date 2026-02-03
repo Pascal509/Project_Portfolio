@@ -21,7 +21,7 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div" style={{ textAlign: "center" }}>
             <img
-              src={require("../../assets/images/Me1.jpg")}
+              src={require("../../assets/images/ProfessionalPhoto.jpg")}
               alt="Eze Profile"
               style={{
                 width: "130px",

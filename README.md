@@ -169,11 +169,11 @@ const skillsSection = { .... }
 
 const techStack = { .... }
 
+const bigProjects = { .... }
+
 const workExperience = { .... }
 
 const openSource = { .... }
-
-const bigProjects = { .... }
 
 const achievementSection = { .... }
 

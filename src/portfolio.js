@@ -21,13 +21,10 @@ const illustration = {
 
 const greeting = {
   username: "CodeWithEze",
-  title: "Hi all, I'm Eze",
+  title: "Hi, I'm Eze",
   subTitle: emoji(
-    `Hey, I'm Chinemerem Ezenagu, a Backend Engineer passionate about building secure, scalable, and AI-powered backend systems.
-With experience across fintech, e-commerce, and AI platforms, I’ve architected APIs and data systems handling millions of operations while ensuring speed, reliability, and clean design.
-Skilled in Go, Rust, Node.js, and Python, I focus on API architecture, database optimization, and AI integration to create intelligent, high-performance backend solutions.
-Beyond coding, I’m a technical writer and mentor, committed to simplifying complex concepts and helping teams build with clarity and precision.
-Currently, I’m focused on AI-driven automation, system scalability, and mentorship within the developer community.`
+    `Backend Engineer building secure, scalable, AI-driven systems. Experienced in fintech, e-commerce, and AI, with expertise 
+    in high-performance APIs, data architecture, and automation using Go, Rust, Node.js, and Python.`
   ),
   resumeLink:
     "https://drive.google.com/file/d/1qZqX8IYFOcpsB68k7k2BG5RckbWPHRmX/view?usp=sharing", // Set to empty to hide the button
@@ -51,15 +48,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY BACKEND DEVELOPER WHO WANTS TO EXPLORE APIs DESIGN, DATABASE OPTIMIZATION, SYSTEM Auth, DevOps etc",
+  subTitle: "APIs DESIGN, DATABASE OPTIMIZATION, SYSTEM Auth, DevOps, LLMs etc",
   skills: [
-    emoji(
-      "⚡ Create scalable, well-structured APIs for seamless frontend-backend communication"
-    ),
-    emoji("⚡ Use JWT, OAuth2, and RBAC to protect sensitive endpoints and manage user access"),
-    emoji(
-      "⚡ Work with MySQL, PostgreSQL, and MongoDB to ensure fast, reliable data storage and retrieva"
-    )
+    // emoji(
+    //   "⚡ Create scalable, well-structured APIs for seamless frontend-backend communication"
+    // ),
+    // emoji("⚡ Use JWT, OAuth2, and RBAC to protect sensitive endpoints and manage user access"),
+    // emoji(
+    //   "⚡ Work with MySQL, PostgreSQL, and MongoDB to ensure fast, reliable data storage and retrieva"
+    // )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -129,110 +126,6 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
-// Education Section
-
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "ALX Academy",
-      logo: require("./assets/images/alx3.png"),
-      subHeader: "Diploma in Software Engineering",
-      duration: "August 2023 -  October 2024",
-      desc: "Developed a strong foundation in software engineering principles, focusing on backend development, system design, and database management.",
-      descBullets: [
-        "Gained hands-on experience in building scalable applications using Python and Node.js",
-        "Learned best practices in API design, security, and performance optimization",
-        "Engaged in collaborative projects, enhancing teamwork and problem-solving skills"
-      ]
-    },
-    {
-      schoolName: "Alt School Africa",
-      logo: require("./assets/images/Altschool.png"),
-      subHeader: "Associate's degree in software development",
-      duration: "January 2022 - December 2022",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Developed a deep understanding of backend system design and API development",
-        "Gained expertise in Python, Node.js, and database management",
-        "Worked on real-world projects, enhancing practical skills in software development"]
-    },
-    {
-      schoolName: "Boot.dev",
-      logo: require("./assets/images/bootdev-logo-full-small.webp"),
-      subHeader: "Certificate Of Achievement",
-      duration: "May 2025 - Present",
-      desc: "Ongoing Course Certification from Boot.dev for Backend Development",
-      descBullets: ["Gaining hands-on experience building scalable backend systems using Go, Python, and SQL.",
-        "Designing and deploying RESTful APIs with strong focus on data modeling, authentication, and performance optimization.",
-        "Applying real-world backend principles through projects emphasizing microservices, containerization, and clean architecture."]
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Backend",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "50%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "JavaScript, Go, Rust, mySQL, Python, Typescript, LangChain, Data structures and Algorithms ",
-      progressPercentage: "70%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "ScaleWorkFlow",
-      project: "Lead Backend Engineer",
-      companylogo: require("./assets/images/scaleworkflow_logo.png"),
-      companyUrl: "http://www.scaleworkflow.com/",
-      date: "August 2025 – Present",
-      desc: `ScaleWorkflow is a workflow automation and business optimization platform designed to help enterprises streamline 
-            operations through intelligent process management. The platform provides custom software solutions, automation tools, 
-            and system integrations that enhance team collaboration, efficiency, and productivity.`,
-      descBullets: [
-        "Contributed as a Lead Backend Engineer, where I architected and deployed a secure Node.js + Express REST API with MongoDB, improved performance by 30%",
-        "Implemented JWT-based authentication, robust file upload services, and automated testing pipelines."
-      ],
-    },
-    {
-      role: "AudioAlly",
-      project: "Backend Developer",
-      companylogo: require("./assets/images/Audioally.jpg"),
-      companyUrl: "https://audio-ally.vercel.app/",
-      date: "April 2024 – July 2024",
-      desc: "Engineered a robust backend system for an audio content platform, focusing on API development and database management.",
-      descBullets: [
-        "Designed and implemented RESTful APIs for audio content management, user authentication, and search functionality",
-        "Optimized database queries to improve performance and reduce response times",
-        "Ensured data integrity and security through proper validation and authentication mechanisms"
-      ]
-    },
-  ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -288,6 +181,110 @@ const bigProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+// Education Section
+
+const educationInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      schoolName: "ALX Academy",
+      logo: require("./assets/images/alx3.png"),
+      subHeader: "Diploma in Software Engineering",
+      duration: "August 2023 -  October 2024",
+      desc: "Developed a strong foundation in software engineering principles, focusing on backend development, system design, and database management.",
+      descBullets: [
+        "Gained hands-on experience in building scalable applications using Python and Node.js",
+        "Learned best practices in API design, security, and performance optimization",
+        "Engaged in collaborative projects, enhancing teamwork and problem-solving skills"
+      ]
+    },
+    {
+      schoolName: "Alt School Africa",
+      logo: require("./assets/images/Altschool.png"),
+      subHeader: "Associate's degree in software development",
+      duration: "January 2022 - December 2022",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      descBullets: ["Developed a deep understanding of backend system design and API development",
+        "Gained expertise in Python, Node.js, and database management",
+        "Worked on real-world projects, enhancing practical skills in software development"]
+    },
+    {
+      schoolName: "Boot.dev",
+      logo: require("./assets/images/bootdev-logo-full-small.webp"),
+      subHeader: "Certificate Of Achievement",
+      duration: "May 2025 - Present",
+      desc: "Ongoing Course Certification from Boot.dev for Backend Development",
+      descBullets: ["Gaining hands-on experience building scalable backend systems using Go, Python, and SQL.",
+        "Designing and deploying RESTful APIs with strong focus on data modeling, authentication, and performance optimization.",
+        "Applying real-world backend principles through projects emphasizing microservices, containerization, and clean architecture."]
+    }
+  ]
+};
+
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: false, //Set it to true to show Proficiency Section
+  experience: [
+    {
+      Stack: "Backend",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "50%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "JavaScript, Go, Rust, mySQL, Python, Typescript, LangChain, Data structures and Algorithms ",
+      progressPercentage: "70%"
+    }
+  ],
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+};
+
+// Work experience section
+
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "ScaleWorkFlow",
+      project: "Lead Backend Engineer",
+      companylogo: require("./assets/images/scaleworkflow_logo.png"),
+      companyUrl: "http://www.scaleworkflow.com/",
+      date: "August 2025 – Present",
+      desc: `ScaleWorkflow is an intelligent workflow automation platform that helps enterprises streamline operations through advanced process management, custom software, and 
+      seamless system integrations—boosting collaboration, efficiency, and overall productivity..`,
+      descBullets: [
+        "Contributed as a Lead Backend Engineer, where I architected and deployed a secure Node.js + Express REST API with MongoDB, improved performance by 30%",
+        "Implemented JWT-based authentication, robust file upload services, and automated testing pipelines."
+      ],
+    },
+    {
+      role: "AudioAlly",
+      project: "Backend Developer",
+      companylogo: require("./assets/images/Audioally.jpg"),
+      companyUrl: "https://audio-ally.vercel.app/",
+      date: "April 2024 – July 2024",
+      desc: "Engineered a robust backend system for an audio content platform, focusing on API development and database management.",
+      descBullets: [
+        "Designed and implemented RESTful APIs for audio content management, user authentication, and search functionality",
+        "Optimized database queries to improve performance and reduce response times",
+        "Ensured data integrity and security through proper validation and authentication mechanisms"
+      ]
+    },
+  ]
+};
+
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
+
+const openSource = {
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
+};
+
 
 // Achievement Section
 // Include certificates, talks etc
@@ -425,7 +422,7 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "CodeWithEzeh", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 

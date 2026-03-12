@@ -23,11 +23,10 @@ const greeting = {
   username: "CodeWithEze",
   title: "Hi, I'm Eze",
   subTitle: emoji(
-    `Backend Engineer building secure, scalable, AI-driven systems. Experienced in fintech, e-commerce, and AI, with expertise 
-    in high-performance APIs, data architecture, and automation using Go, Rust, Node.js, and Python.`
+    `Software Engineer | Backend Developer | AI Enthusiast`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1qZqX8IYFOcpsB68k7k2BG5RckbWPHRmX/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/18P_k1lm86G0r80Yhql9PBjsd6JdxFSGy/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -39,6 +38,7 @@ const socialMediaLinks = {
   gmail: "chinemeremezenagu@gmail.com",
   medium: "https://medium.com/@CodeWithEzeh",
   stackoverflow: "https://stackoverflow.com/users/23903260/ezenagu-chinemerem",
+  whatsapp: "https://wa.me/2349028854415",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -249,11 +249,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Web Developer",
+      project: "Reagan Pharmaceuticals",
+      companylogo: require("./assets/images/reagan_logo.jpg"),
+      companyUrl: "https://reagan-remedies-site.vercel.app/",
+      date: "January 2026 – Present",
+      desc: `Reagan Pharmaceuticals is a leading pharmaceutical company dedicated to improving global health through innovative drug development and patient-centric care.
+            With a commitment to research excellence and cutting-edge technology, Reagan Pharmaceuticals strives to deliver high-quality medications that address unmet medical needs and enhance the well-being of patients worldwide.`,
+      descBullets: [
+        "Architected and deployed a secure Next.js application with Tailwind CSS, improving performance by 25%",
+        "Implemented responsive design and optimized user experience across devices, resulting in a 20% increase in user engagement",
+      ],
+    },
+    {
       role: "ScaleWorkFlow",
       project: "Lead Backend Engineer",
       companylogo: require("./assets/images/scaleworkflow_logo.png"),
       companyUrl: "http://www.scaleworkflow.com/",
-      date: "August 2025 – Present",
+      date: "August 2025 – February 2026",
       desc: `ScaleWorkflow is an intelligent workflow automation platform that helps enterprises streamline operations through advanced process management, custom software, and 
       seamless system integrations—boosting collaboration, efficiency, and overall productivity..`,
       descBullets: [

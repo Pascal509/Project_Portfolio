@@ -64,6 +64,10 @@
   background-color: $kaggle;
 }
 
+.whatsapp i {
+  background-color: $whatsapp;
+}
+
 .instagram i {
   background-color: $instagram;
 }
@@ -78,6 +82,7 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
+.whatsapp i:hover,
 .medium i:hover {
   background-color: $textColor;
 }

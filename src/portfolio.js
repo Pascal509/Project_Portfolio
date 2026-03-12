@@ -129,9 +129,20 @@ https://fontawesome.com/icons?d=gallery */
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Websites and Apps",
   subtitle: "PERSONAL AND OPEN SOURCE PROJECTS",
   projects: [
+    {
+      image: require("./assets/images/reagan.png"),
+      projectName: "Reagan Phamrmaceuticals",
+      projectDesc: "A Pharmaceutical Company Website Built with Next.js and Tailwind CSS",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://reagan-remedies-site.vercel.app/"
+        }
+      ]
+    },
     {
       image: require("./assets/images/multi-agent-assistant.png"),
       projectName: "Multi-Agent Assistant",
@@ -154,17 +165,6 @@ const bigProjects = {
           url: "https://audio-ally.vercel.app/"
         }
         //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/AI-recruiter.jpg"),
-      projectName: "AI-Freddie recruiter",
-      projectDesc: "An AI-Powered Recruitment Assistant",
-      footerLink: [
-        {
-          name: "See Video",
-          url: "https://drive.google.com/file/d/196xOSvZF1LDOmQQoT4c_AMrlKqm8wuvN/view?usp=sharing"
-        }
       ]
     },
     {
